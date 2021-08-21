@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+
+.top-header{
+    color: dimgrey;
+    text-align: center;
+};
+
+.btn-light:hover {
+    background-color: #1C1F22;
+    color: gainsboro;
+};
+
+.cost-table {
+    width: 50%;
+};
+
+.promo{
+    width: 50%;
+};

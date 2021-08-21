@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook Online Cart</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css frame -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- implementing html:5 -->
+    <header>
+        <section class="top-header">
+            <div>
+                <h1>Apple Online Store</h1>
+            </div>
+        </section>
+    </header>
+    <!-- starting main -->
+    <main class="container py-5">
+        <div class="row row-cols-1 row-cols-md-2 g-1">
+            <div class="col-md-5">
+                <div class="card border-0">
+                    <img src="images/mac.png" class="card-img-top w-75 m-auto" alt="MacBook">
+                    <br>
+                    <h3>Apple Macbook Pro</h3>
+                </div>
+            </div>
+            <!-- product heading -->
+            <div class="col-md-7">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                            Customize your Blue 24‑inch iMac with Apple M1 chip.
+                        </h1>
+
+                        <!-- About Product-->
+                        <p class="card-text pt-2">
+                            Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU,
+                            and 16-core Neural Engine
+                            8GB unified memory
+                            256GB SSD storage
+                            Two Thunderbolt / USB 4 ports
+                            Magic Mouse
+                            Magic Keyboard - US English
+                        </p>
+
+                        <!-- Memory part -->
+                        <div class="pt-4 memory">
+                            <h6>Memory</h6>
+                            <button type="button" class="btn mb-2 btn-light border">8GB unified memory</button>
+                            <button type="button" class="btn mb-2 btn-light border">16GB unified memory</button>
+                        </div>
+
+                        <!-- Storage Part -->
+                        <div class="pt-4 storage">
+                            <h6>Storage</h6>
+                            <button type="button" class="btn mb-2 btn-light border">256GB SSD storage</button>
+                            <button type="button" class="btn mb-2 btn-light border">512GB SSD storage</button>
+                            <button type="button" class="btn mb-2 btn-light border">1TB SSD storage</button>
+                        </div>
+
+                        <!-- Shipping part -->
+                        <div class="pt-4 delivery">
+                            <h6>Choose your delivery option</h6>
+                            <button type="button" class="btn mb-2 btn-light border">
+                                Friday, Aug 25 FREE Prime
+                                Delivery
+                            </button>
+                            <button type="button" class="btn mb-2 btn-light border">
+                                Friday, Aug 21 Delivery charge $20
+                            </button>
+                        </div>
+
+                        <div class="pt-4 cost-table">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Best Price</th>
+                                        <td class="fw-bold">$<span id="best-price">1299</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Extra Memory Cost</th>
+                                        <td class="fw-bold">$<span id="memory-cost">0</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Extra Storage Cost</th>
+                                        <td class="fw-bold">$<span id="storage-cost">0</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Delivery charge</th>
+                                        <td class="fw-bold">$<span id="delivery-charge">0</span></td>
+                                    </tr>
+                                </tbody>
+
+                                <!-- Total Calculated price -->
+                                <tfoot>
+                                    <th scope="row">Total Price</th>
+                                    <td class="fw-bold">$<span class="total-price">1299</span></td>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <!-- Coupon part -->
+                        <div class="pt-4 promo">
+                            <h6>Add Promo code</h6>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="promo-code">
+                                <button class="btn btn-danger">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Calculation -->
+        <div>
+            <hr>
+            <h1 class="text-center mb-0">
+                Total: $<span class="total-price">1299</span>
+            </h1>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center">Copyright © 2021 <span style="color: cadetblue;">Apple</span> Inc. All rights reserved.
+        </p>
+    </footer>
+    <!-- bootstrap js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
