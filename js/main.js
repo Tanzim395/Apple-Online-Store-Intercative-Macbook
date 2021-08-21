@@ -13,7 +13,7 @@ function executeCoupon() {
         if (totalPrice.innerText < 0) {
             totalPrice.innerText = 0;
         };
-        //implement 20% discount calc
+        //implementing 20% discount calc
         const previousTotal = parseFloat(totalPrice.innerText);
         const discount = (previousTotal * 20) / 100;
         totalPrice.innerText = previousTotal - discount;
